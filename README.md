@@ -1,5 +1,15 @@
-# Forensics Detective
+# Forensics Detective (Project 2)
+# Task 2 overview:
+I applied 5 different image augmentations to each original document image. Each augmentation represents normal distortions found in real documents. For every original image, I generated five augmented variants, resulting in a dataset size increase of approximately 6× (original + augmented).
+Methods:
+1. Gaussian noise- I added random pixel noise to the images.
+2. Jpeg compression- I saved images using jpeg compression (basically losing data)3. Downsampling- I reduced image sizes (by 50%) and then brought them back to thier original dimensions.
+4. Random cropping- I cropped small portions of the images and then resized them back to thier original dimensions.
+5. Bit depth reduction- I decreased the number of bits used to represent each image (4-bit level reduction).
 
+All augmentations were applied independently to the original images, rather than sequentially chaining transformations. This ensures that each augmentation represents a distinct and interpretable type of distortion.
+
+######################
 ## Project Information
 - **Created By:** Justin Del Vecchio
 - **Version:** 0.2
